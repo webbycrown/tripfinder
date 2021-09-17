@@ -78,7 +78,7 @@
         $('body').toggleClass('menu-open');
     });
     $(window).scroll(function() {
-     if ($(this).scrollTop() > 50){  
+     if ($(this).scrollTop() > 0){  
         $('header').addClass("header-sticky");
       }
       else{

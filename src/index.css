@@ -11,7 +11,33 @@
     .btn-primary {
         @apply bg-theme text-white hover:opacity-90;
     }
-    
+    .title{
+        @apply text-2xl md:text-4xl font-bold text-dark;
+    }
+    .is-relative{
+        @apply h-[65px] md:h-[82px];
+    }
+    header.is-transparent{
+        @apply fixed top-0 left-0;
+    }
+    header.is-default{
+      @apply bg-white border-b border-gray-200;  
+    }
+    header.is-default .logo a{
+        @apply text-theme;
+    }
+    header.is-default .logo .toggle-menu span{
+        @apply bg-dark;
+    }
+    header.is-default ul li a:not(.btn){
+        @apply text-dark hover:text-theme;
+    }
+    header.is-default ul li.active a:not(.btn){
+        @apply text-theme border-theme;
+    }
+    .form-control{
+        @apply border border-gray-200 rounded-[3px] w-full p-3 block text-sm text-dark leading-normal resize-none;
+    }
     *:focus, div:focus, a:focus, button:focus{
         outline: none;
     }
@@ -47,7 +73,7 @@
         @apply text-theme;
     }
     header.header-sticky{
-        @apply bg-white shadow-gray;
+        @apply bg-white shadow-gray transition-all duration-300 fixed top-0 left-0;
     }
     header.header-sticky ul{
         @apply text-dark;
@@ -78,6 +104,28 @@
         stroke: rgb(255, 255, 255);
         stroke-width: 2px;
         transition: fill 1s ease 0s;
+    }
+    .ant-checkbox-wrapper input:checked~ .ant-checkbox-inner{
+       @apply border-theme bg-theme;
+    }
+    .ant-checkbox-wrapper input:checked~ .ant-checkbox-inner:after {
+        position: absolute;
+        display: table;
+        border: 2px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        -webkit-transform: rotate(
+        45deg) scale(1) translate(-50%,-50%);
+        transform: rotate(
+        45deg) scale(1) translate(-50%,-50%);
+        opacity: 1;
+        -webkit-transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
+        transition: all .2s cubic-bezier(.12,.4,.29,1.46) .1s;
+        content: " ";
+        top: 50%;
+        left: 22%;
+        width: 5.71428571px;
+        height: 9.14285714px;
     }
 
     @media (max-width: 991px) {

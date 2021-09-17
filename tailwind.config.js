@@ -29,6 +29,7 @@ module.exports = {
             'gray-200': '#e6e6e6',
             'gray-300': '#909090',
             'gray-400': '#8c97ac',
+            'gray-500': '#777777',
             'dark-opacity': 'rgba(0,0,0,0.25)',
         },
         extend: {
@@ -50,6 +51,9 @@ module.exports = {
             },
             boxShadow: {
                 'gray': 'rgb(0 0 0 / 10%) 0px 0px 20px',
+                'gray-box': '0 6px 12px rgb(0 0 0 / 16%)',
+                'popup': 'rgb(26 26 29 / 30%) 0px 15px 46px -10px',
+                'btn': 'rgb(0 0 0 / 16%) 0px 3px 6px',
             },
             maxWidth: {
             },
@@ -63,6 +67,10 @@ module.exports = {
                 '3': '3',
                 '4': '4',
                 '5': '5',
+                '11': '11',
+                '12': '12',
+                '13': '13',
+                '14': '14',
                 '15': '15',
             },
             height: {
