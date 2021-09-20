@@ -26,7 +26,7 @@ export const Contact_form = () => {
 					
 					<div className="py-2 md:py-4">
 						<label className="text-md font-semibold ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-                        	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+                        	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
                         	<span className="ant-checkbox-inner absolute top-[3px] md:top-[2px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
                         	{Your_checkbox}
                         </label>

@@ -10,37 +10,37 @@ export const Filter = () => {
 						<div className="popup_container hidden absolute z-12 top-full left-0 min-w-[300px] bg-white p-7 pb-3 shadow-popup rounded-[3px]">
 	                        <div className="">
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Free Wi-Fi
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Free Parking
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Breakfast included
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Pool
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-5 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Air Conditioning
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Hot Shower
 	                            </label>
 	                            <label className="ant-checkbox-wrapper group relative pl-6 mb-4 block cursor-pointer">
-	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" value="free-wifi" />
+	                            	<input type="checkbox" className="absolute opacity-0 hidden ant-checkbox-input" defaultValue="free-wifi" />
 	                            	<span className="ant-checkbox-inner absolute top-[1px] left-0 w-4 h-4 border border-gray-300 rounded-sm block group-hover:border-theme"></span>
 	                            	Cable TV
 	                            </label>
