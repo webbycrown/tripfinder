@@ -5,6 +5,7 @@ import { Description } from './single_listing_components/Description';
 import { Amenities_facilities } from './single_listing_components/Amenities_facilities';
 import { Location } from './single_listing_components/Location';
 import { Single_review } from './single_listing_components/Single_review';
+import { Book_now_box } from './single_listing_components/Book_now_box';
 export const Single_listing_page = () => {
 	return(
 			<div>
@@ -19,7 +20,7 @@ export const Single_listing_page = () => {
 							<Single_review />
 						</div>
 						<div className="w-1/3 px-3">
-							
+							<Book_now_box />
 						</div>
 					</div>
 				</div>
