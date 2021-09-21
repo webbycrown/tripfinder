@@ -1,10 +1,22 @@
 import React from 'react';
+import SingleReview from "./SingleReview";
 
 export const Review = () => {
-	const Review_title = 'Our Happy Guests';
-	const Review_box_title = 'Perfect Beach Resort';
-	const Review_box_text = 'If you are looking for clean, well appointed lodging in a quiet beach town setting look no further. Naomi and Wayne are simply the most gracious hosts who are super friendly and willing to go way above and beyond to make your stay wonderful. We did not have a car but found the local,bus easy to,use. We used it during our stay to visit Cairns and also Smithfield. We found booking tours at the resort was convenient and worth the extra money for the ease of operation. The Strait on The Beach Cafe right across the street is the perfect spot for lunch and dinner. They have great food with live entertainment on some evenings. We cannot say enough about our stay and the outstanding service from Naomi and Wayne.';
-	const Review_box_name = 'Al CPO ';
+	const reviews = [
+	    {
+	      title: "Perfect Beach Resort",
+	      body: "If you are looking for clean, well appointed lodging in a quiet beach town setting look no further. Naomi and Wayne are simply the most gracious hosts who are super friendly and willing to go way above and beyond to make your stay wonderful. We did not have a car but found the local,bus easy to,use. We used it during our stay to visit Cairns and also Smithfield. We found booking tours at the resort was convenient and worth the extra money for the ease of operation. The Strait on The Beach Cafe right across the street is the perfect spot for lunch and dinner. They have great food with live entertainment on some evenings. We cannot say enough about our stay and the outstanding service from Naomi and Wayne.",
+	      name: "Al CPO ",
+	      source: "Oceanside, California",
+	    },
+	    {
+	      title: "Perfect Beach Resort",
+	      body: "If you are looking for clean, well appointed lodging in a quiet beach town setting look no further. Naomi and Wayne are simply the most gracious hosts who are super friendly and willing to go way above and beyond to make your stay wonderful. We did not have a car but found the local,bus easy to,use. We used it during our stay to visit Cairns and also Smithfield. We found booking tours at the resort was convenient and worth the extra money for the ease of operation. The Strait on The Beach Cafe right across the street is the perfect spot for lunch and dinner. They have great food with live entertainment on some evenings. We cannot say enough about our stay and the outstanding service from Naomi and Wayne.",
+	      name: "Al CPO ",
+	      source: "Oceanside, California",
+	    },
+	  ];
+  	const Review_title = 'Our Happy Guests';
 	const Review_box_location = 'Oceanside, California';
 
 	return(
@@ -17,33 +29,9 @@ export const Review = () => {
 					<div className="review-slider">
 						<div className="swiper mySwiper">
 	                        <div className="swiper-wrapper">
-	                            <div className="swiper-slide">
-	                            	<div className="border border-gray-200 rounded-md p-6 md:p-8">
-	                            		<div className="mb-4 sm:mb-8"><img src="./assets/img/download.png" alt="" /></div>
-	                            		<h4 className="text-base leading-relaxed">{Review_box_title}</h4>
-	                            		<p className="text-base leading-relaxed mb-7">{Review_box_text}</p>
-	                            		<h3 className="text-theme text-xl mb-1 font-extrabold">{Review_box_name}</h3>
-	                            		<h5 className="text-gray text-base">{Review_box_location}</h5>
-	                            	</div>
-	                            </div>
-	                            <div className="swiper-slide">
-	                            	<div className="border border-gray-200 rounded-md p-6 md:p-8">
-	                            		<div className="mb-4 sm:mb-8"><img src="./assets/img/download.png" alt="" /></div>
-	                            		<h4 className="text-base leading-relaxed">{Review_box_title}</h4>
-	                            		<p className="text-base leading-relaxed mb-7">{Review_box_text}</p>
-	                            		<h3 className="text-theme text-xl mb-1 font-extrabold">{Review_box_name}</h3>
-	                            		<h5 className="text-gray text-base">{Review_box_location}</h5>
-	                            	</div>
-	                            </div>
-	                            <div className="swiper-slide">
-	                            	<div className="border border-gray-200 rounded-md p-6 md:p-8">
-	                            		<div className="mb-4 sm:mb-8"><img src="./assets/img/download.png" alt="" /></div>
-	                            		<h4 className="text-base leading-relaxed">{Review_box_title}</h4>
-	                            		<p className="text-base leading-relaxed mb-7">{Review_box_text}</p>
-	                            		<h3 className="text-theme text-xl mb-1 font-extrabold">{Review_box_name}</h3>
-	                            		<h5 className="text-gray text-base">{Review_box_location}</h5>
-	                            	</div>
-	                            </div>
+	                             {reviews.map((review, index) => (
+				                  <SingleReview review={review} key={index}/>
+				                ))}
                             </div>
                             <div className="swiper-pagination static mt-10 md:mt-16"></div>
                         </div>

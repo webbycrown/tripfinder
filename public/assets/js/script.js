@@ -10,7 +10,6 @@
         },
 
         all_slider: function() {
-            console.log('test');
             setTimeout(function(){
                 var swiper = new Swiper(".home-hiro-slider .mySwiper", {
                     spaceBetween: 0,
@@ -26,20 +25,26 @@
                       clickable: true,
                   },
               });
-                var swiper = new Swiper(".features-box-slider .mySwiper", {
+                $('.features-box-slider .mySwiper').each(function (index) {
+                 var slider_this = $(this);
+                slider_this.parent().parent().find(".swiper-button-next").addClass('features-swiper-button-next-'+index);
+                 slider_this.parent().parent().find(".swiper-button-prev").addClass('features-swiper-button-prev-'+index);
+                 slider_this.parent().parent().find(".swiper-pagination").addClass('features-swiper-pagination-'+index);
+                  var feature_mySwiper = new Swiper($(this)[0],{
                     spaceBetween: 0,
                     slidesPerView: 1,
                     speed: 1000,
                     loop: true,
                     navigation: {
-                      nextEl: ".features-box-slider .swiper-button-next",
-                      prevEl: ".features-box-slider .swiper-button-prev",
-                  },
-                  pagination: {
-                      el: ".features-box-slider .swiper-pagination",
+                      nextEl: '.features-swiper-button-next-'+index,
+                      prevEl: '.features-swiper-button-prev-'+index,
+                    },
+                    pagination: {
+                      el: '.features-swiper-pagination-'+index,
                       clickable: true,
-                  },
-              });
+                    },
+                  });
+                });
                 var swiper = new Swiper(".review-slider .mySwiper", {
                     spaceBetween: 10,
                     slidesPerView: 1,
@@ -97,11 +102,12 @@
                 value = 0;
             }
             jQuery(this).siblings('.qnt-input').val(value);
+
             if( value == 0 ){
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text('');
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-hidden').val('');
             }else{
-                jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text(':'+value);
+                jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text(': '+value);
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-hidden').val(value);
             }            
         });
@@ -123,14 +129,14 @@
         {
             var container = $(".popup_container_btns ");
 
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
-    {
-        container.addClass('hidden');
-    }else{
-        container.removeClass('hidden');
-    }
-});
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+            {
+                container.addClass('hidden');
+            }else{
+                container.removeClass('hidden');
+            }
+        });
 
         jQuery(document).on('click','.popup_container_btns .room-info .incBtn',function(){
             var type = jQuery(this).parents('.room-info').attr('data-type');
@@ -142,11 +148,13 @@
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text('');
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-hidden').val('');
             }else{
-                jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text(':'+value);
+                jQuery('.quantity-room-wrap .ant-btn .'+type+'-number').text(': '+value);
                 jQuery('.quantity-room-wrap .ant-btn .'+type+'-hidden').val(value);
             }  
 
         });
+
+    
 
     }
 

@@ -60,6 +60,7 @@
     font-weight: 400;
     color: rgb(44, 44, 44);
     background: transparent;
+    height: 60px;
 }
 .date_picker .DateRangePicker .DateRangePickerInput .DateRangePickerInput_arrow + .DateInput input {
     text-align: right;
